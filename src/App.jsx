@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const data = useCurrencyInfo("inr");
+  console.log("Converted Data:", data);
 
   return (
     <>
-   
+      <div className="flex justify-center items-center max-h-dvh min-h-dvh overflow-y-scroll bg-amber-100">
+        <div>
+          <h1>Currency Converter</h1>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
