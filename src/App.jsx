@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center items-center max-h-dvh min-h-dvh overflow-y-scroll bg-amber-100">
+      <div className="flex justify-center items-center max-h-dvh min-h-dvh overflow-y-scroll bg-black text-white">
         <div>
           <h1>Currency Converter</h1>
         </div>
